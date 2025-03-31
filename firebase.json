@@ -10,9 +10,14 @@
       ]
     },
     {
-      "target": "timeline-data", 
-      "public": "public",     
-      "only": ["timeline.json"] 
+      "target": "timeline-data",
+      "public": "public" , 
+      "rewrites": [
+        {
+          "source": "/timeline.json",
+          "destination": "/timeline.json"
+        }
+      ]
     }
   ]
 }
