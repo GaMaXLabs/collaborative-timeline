@@ -2,7 +2,6 @@ name: Check Timeline Data on PR
 
 on:
   pull_request:
-    types: [opened]
     branches:
       - main
 
@@ -19,9 +18,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 22
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Generate Timeline Data
-        run: npm run generate-timeline-data
+        run: node scripts/generate-timeline-data.js
