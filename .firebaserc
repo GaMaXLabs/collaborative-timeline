@@ -4,11 +4,10 @@
   },
   "targets": {
     "flisol-ittoluca": {
-      "hosting": {
+      "hosting": { 
         "app": [
-          "collaborative-timeline",
-          "flisol-ittoluca"
-        ],
+        "collaborative-timeline"
+      ],
         "timeline-data": [
           "collaborative-timeline-data"
         ]
